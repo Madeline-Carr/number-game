@@ -1,0 +1,31 @@
+body{
+  font-family: sans-serif;
+  background-color: #222;
+  color:white;
+}
+h1{
+  color: dodgerblue;
+}
+p{
+  color: white;
+}
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+
+input[type=text]{
+  background-color: tomato;
+  border: none;
+  border-radius: 80px;
+  height: 40px;
+  width: 33%;
+  color: white;
+  font-size: 20px;
+  padding: 12px;
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+}
