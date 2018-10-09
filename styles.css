@@ -1,6 +1,6 @@
 body{
   font-family: sans-serif;
-  background-color: #222;
+  background-color: #111;
   color:white;
 }
 h1{
@@ -19,13 +19,29 @@ input[type=text]{
   border: none;
   border-radius: 80px;
   height: 40px;
-  width: 33%;
+  width: 66%;
   color: white;
-  font-size: 20px;
-  padding: 12px;
+  font-size: 25px;
+  padding: 15px;
+  outline:none;
+  text-align: center;
 }
 
 input::placeholder {
   color: white;
   text-align: center;
+}
+
+button{
+  background-color: seagreen;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 80px;
+  border: none;
+  width: 250px;
+}
+button:hover {
+  background-color: rgb(39, 84, 40);
+  outline: none;
 }
