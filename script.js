@@ -10,14 +10,20 @@ function makeVar(){
   console.log(response);
   // Read the Value and console log a response.
     if (response < randomNumber) {
-      console.log("It is higher than that!!!");
+      var lowResponses = ["Try guessing higher!","The number is a bit larger than that!","It is not that low!", "Guess higher!"]
+      var randNumber= Math.floor(Math.random()*4);
+      document.getElementById("responsePlace").innerHTML = lowResponses[randNumber];
     } else if (response > randomNumber) {
-      console.log("It is lower than that!!!");
+      var highResponses = ["Try guessing lower!","The number is a bit smaller than that!","It is not that high!", "Guess lower!"]
+      var randNumber= Math.floor(Math.random()*4);
+      document.getElementById("responsePlace").innerHTML = highResponses[randNumber];
     } else if (response == randomNumber) {
       console.log("YOU WIN!!!");
+      document.getElementById("responsePlace").innerHTML = "YOU WIN!";
       startAgain();
     }else {
       console.log("Please enter a number!!!");
+      document.getElementById("responsePlace").innerHTML = "Please enter a number!!!";
     }
 };
 
@@ -29,9 +35,3 @@ function startAgain() {
 //Add enviroment backgrounds.
 //Pick level difficulty.
 //Change responses.
-//
-//
-//
-//
-//
-//
